@@ -1,2 +1,22 @@
-<h2>Products Available: <%= @product.inspect %></h2>
-<h2>Catagories Available: <%= @catagory.inspect %></h2>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Class</th>
+      <th scope="col">Availabile</th>  
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td><%= link_to 'Products', [:admin, :products] %></td>
+      <td><%= @product %></td>
+ 
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Categories</td>
+      <td><%= @category %></td>
+    </tr>
+  </tbody>
+</table>
