@@ -7,7 +7,7 @@
 # dotenv
 # TODO Comment out this rule if environment variables can be committed
 .env
-
+.history
 ## Environment normalization:
 /.bundle
 /vendor/bundle
