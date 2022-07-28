@@ -45,7 +45,27 @@
           <%# </ul>
         </li> %>
       </ul>
+    
+
+  
       <ul class="navbar-nav">
+      
+              <% if current_user %>
+              <li class="navbar-text text-dark">
+  Signed in as <%= current_user.name %>
+  </li>
+  <li >
+  <%= link_to "Logout", '/logout', class: "nav-link" %>
+  </li>
+<% else %>
+<li >
+  <%= link_to 'Login', '/login', class: "nav-link" %>
+  </li>
+  <li >
+  <%= link_to 'Signup', '/signup', class: "nav-link" %>
+  </li>
+<% end %>
+
         <li class="nav-item dropdown">
           <a
             class="nav-link dropdown-toggle text-danger"
@@ -60,6 +80,7 @@
           <ul class="dropdown-menu dropdown-menu-dark">
             <li><%= link_to 'Dashboard', [:admin, :root], class: "nav-link" %></li>
             <li><%= link_to 'Products', [:admin, :products], class: "nav-link" %></li>
+            <li><%= link_to 'Categories', [:admin_categories], class: "nav-link" %></li>
           </ul>
         </li>
         <li class="nav-item end-0">
