@@ -52,7 +52,7 @@
       
               <% if current_user %>
               <li class="navbar-text text-dark">
-  Signed in as <%= current_user.name %>
+  Signed in as <%= current_user.first %>
   </li>
   <li >
   <%= link_to "Logout", '/logout', class: "nav-link" %>
