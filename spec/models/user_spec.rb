@@ -53,7 +53,7 @@ RSpec.describe User, type: :model do
     end
 
     it "return user if user is found" do
-      @user = User.new(first:"name", last: "last", email: "123@123.com", password: "1234", password_confirmation: "12345678")
+      @user = User.new(first:"name", last: "last", email: "123@123.com", password: "1234", password_confirmation: "1234")
       @user.save!
       @result = User.authenticate_with_credentials("123@123.com", "1234")
       expect(@result).to eq(@user)

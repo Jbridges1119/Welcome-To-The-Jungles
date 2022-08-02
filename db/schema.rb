@@ -20,7 +20,7 @@ ActiveRecord::Schema.define(version: 2022_08_01_205706) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
-
+  # Ignore this table - made by mistake and haven't removed.
   create_table "firsts", force: :cascade do |t|
     t.string "last"
     t.string "email"
