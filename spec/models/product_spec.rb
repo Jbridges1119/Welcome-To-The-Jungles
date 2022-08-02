@@ -14,12 +14,12 @@ RSpec.describe Product, type: :model do
       @product.validate
       expect(@product.errors.full_messages).to include("Name can't be blank") 
     end
-   it 'validates price presence ' do
-    @category = Category.new
-    @product = Product.new(name: "name", price: [nil], quantity: 5, category: @category)
-    @product.validate
-    expect(@product.errors.full_messages).to include("Price can't be blank") 
-  end
+    it "will not validate if price is not present" do
+      @category = Category.new
+      @product = Product.new(name: "name", price: [nil], quantity: 12, category: @category)
+      @product.validate
+      expect(@product.errors.full_messages).to include("Price can't be blank") 
+    end
    
    it 'validates quantity presence ' do
     @category = Category.new
