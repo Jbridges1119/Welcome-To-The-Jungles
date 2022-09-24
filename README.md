@@ -1,6 +1,6 @@
 # Welcome To The Jungle
 
-Welcome To The Jungle is a mini e-commerce application built with Ruby on Rails 6.1, Active Record and Rspec for testing. Users can browse products, add to cart and checks-out stripe payment system. If a user is an admin they are also able to add/remove items or create new categories using an admin dashboard. 
+Welcome To The Jungle is a mini e-commerce application built with Ruby on Rails 6.1, Active Record and Rspec for testing. Users can browse products, add to cart and checks-out with stripe payment system. If a user is an admin they are also able to add/remove items or create new categories using an admin dashboard. 
 
 ## Final Product
 
