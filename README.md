@@ -1,6 +1,8 @@
-# Jungle
+# Welcome To The Jungle
 
-A mini e-commerce application built with Rails 6.1 for purposes of teaching Rails by example.
+Welcome To The Jungle is a mini e-commerce application built with Ruby on Rails 6.1, Active Record and Rspec for testing. Users can browse products, add to cart and checks-out stripe payment system. If a user is an admin they are also able to add/remove items or create new categories using an admin dashboard. 
+
+## Final Product
 
 ## Setup
 
@@ -23,9 +25,19 @@ Use Credit Card # 4111 1111 1111 1111 for testing success scenarios.
 
 More information in their docs: <https://stripe.com/docs/testing#cards>
 
-## Dependencies
+## Built-With
 
 - Rails 6.1 [Rails Guide](http://guides.rubyonrails.org/v6.1/)
 - Bootstrap 5
 - PostgreSQL 9.x
 - Stripe
+
+## Dependencies
+
+- "@rails/actioncable": "^6.0.0",
+- "@rails/activestorage": "^6.0.0",
+- "@rails/ujs": "^6.0.0",
+- "@rails/webpacker": "5.4.0",
+- "turbolinks": "^5.2.0",
+- "webpack": "^4.46.0",
+- "webpack-cli": "^3.3.12"
